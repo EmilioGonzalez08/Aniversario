@@ -1,0 +1,130 @@
+/* Efecto general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+}
+
+/* Fondo de neblina simulada */
+body {
+    background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 70%);
+    animation: fog 20s infinite linear;
+}
+
+@keyframes fog {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-10%, -10%); }
+    100% { transform: translate(0, 0); }
+}
+
+/* Contenedor principal */
+#container {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 30px;
+    text-align: center;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    position: relative;
+    z-index: 1;
+}
+
+/* Título */
+h1 {
+    font-size: 2.2em;
+    color: #f5f5f5;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Introducción */
+.intro {
+    font-size: 1.1em;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+}
+
+/* Tarjeta de acertijo */
+.puzzle-card {
+    background: #2a2a2a;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.puzzle-card:hover {
+    transform: translateY(-5px);
+    background: #333;
+}
+
+/* Entrada y botón */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    width: 80%;
+    background: #1e1e1e;
+    color: #e0e0e0;
+    margin-top: 10px;
+}
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background-color: #666;
+}
+
+/* Retroalimentación */
+.feedback {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+/* Mensaje final */
+.final-message {
+    max-height: 60vh; /* Limita la altura visible del mensaje final */
+    overflow-y: auto; /* Permite desplazamiento solo en el mensaje final */
+    padding: 20px;
+    background: #222;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.final-message h2 {
+    color: #d4af37;
+}
+.letter {
+    white-space: pre-wrap;
+    line-height: 1.6;
+    color: #f0f0f0;
+    font-style: italic;
+}
+.hidden {
+    display: none;
+}

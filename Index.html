@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Reto de los Acertijos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Feliz aniversario, Hanni 🎁</h1>
+        <p class="intro">Descifra cada prueba. No habrá pistas :).</p>
+        
+        <div id="puzzle1" class="puzzle-card">
+            <p><strong>Prueba 1:</strong> 4-9-5-3-9-19-5-9-19 4-5 14-15-22-9-5-13-2-18-5</p>
+            <input type="text" id="answer1" placeholder="Escribe tu respuesta aquí">
+            <button onclick="checkAnswer1()">Enviar Respuesta</button>
+            <p id="feedback1" class="feedback"></p>
+        </div>
+
+        <div id="puzzle2" class="puzzle-card hidden">
+            <p><strong>Prueba 2:</strong> .-. . ... - .- / - .-. . ... / .-.. . - .-. .- ...</p>
+            <input type="text" id="answer2" placeholder="Escribe tu respuesta aquí">
+            <button onclick="checkAnswer2()">Enviar Respuesta</button>
+            <p id="feedback2" class="feedback"></p>
+        </div>
+
+        <div id="puzzle3" class="puzzle-card hidden">
+            <p><strong>Prueba 3:</strong> ILQ GH OD SUXHED</p>
+            <input type="text" id="answer3" placeholder="Escribe tu respuesta aquí">
+            <button onclick="checkAnswer3()">Enviar Respuesta</button>
+            <p id="feedback3" class="feedback"></p>
+        </div>
+
+        <div id="message" class="final-message hidden">
+            <h2>Felicidades, has llegado al final...</h2>
+            <p>Tu regalo final es una carta, espero que te guste:</p>
+            <p class="letter">
+                Hola Hanni, espero que estés muy bien para el momento en el que estés leyendo esto. Discúlpame por hacerte pensar para esta carta, quería que fuera divertido, y quizá no era lo que esperabas pero espero que te la hayas pasado bien recopilando las pistas :).
+
+                Ya va un año de que hicimos esto oficial, y sé que ambos sabemos que hemos estado juntos más tiempo, pero creo que es una buena fecha para celebrar que tú y yo seguimos aquí.
+
+                Quiero aprovechar esta oportunidad para decirte lo mucho que te amo y lo feliz que soy a tu lado. Decir que te amo más de lo que jamás he podido amar a alguien y que eres el motor de mi vida. Que si pudiera, te daría mi vida, mi corazón y mi alma, y que te daría todo eso y más solo para ver tu sonrisa salir.
+
+                Amo todo de ti: tus ojos, tu cabello, tu manera de vestir, tu forma de hablar, la manera en la que te encanta sobresalir, pero también la forma en la que no te gusta llamar la atención. Amo tu forma de ser, tu color de piel, tu manera de ver la vida y la forma en la que me ves.
+
+                Amo cuando me molestas porque sé que de esa forma me dices que me amas, y también amo que me digas que me amas después de que me molestas para asegurarte de que me lo tomo bien.
+
+                Amo que pongas música mientras manejo y cantar contigo a todo pulmón, y que le pongamos tanto sentimiento que casi nos quedemos sin voz. Amo platicar contigo hasta altas horas de la madrugada, aunque eso signifique no querer levantarme ningún día por el resto de la semana.
+
+                Amo el perfume que tienes, tus ojos, tus dientes, que siempre que vienes a mi casa me abrazas y todo se me pasa. Que cuando estoy contigo me digo a mí mismo "Ojalá poder verte por siempre" y ponerme triste cuando regresas a tu casa...
+
+                Podría seguir con un millón de cosas que amo de ti, pero tengo toda una vida para hacerte sentir lo que tú me haces sentir a mí.
+
+                Gracias por darle sentido a lo que no tiene sentido y por hacerme sentir que soy el ser humano más querido.
+
+                Feliz aniversario, mi amor.
+            </p>
+            <p>Te ama:</p>
+            <p>Emilio.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
