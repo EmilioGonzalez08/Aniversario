@@ -54,4 +54,12 @@ function checkAnswer3() {
         document.getElementById("feedback3").textContent = "Inténtalo de nuevo.";
     }
 }
-
+function skipToMessage() {
+    // Ocultar todas las pruebas
+    document.getElementById("puzzle1").classList.add("hidden");
+    document.getElementById("puzzle2").classList.add("hidden");
+    document.getElementById("puzzle3").classList.add("hidden");
+    
+    // Mostrar el mensaje final
+    document.getElementById("message").classList.remove("hidden");
+}
