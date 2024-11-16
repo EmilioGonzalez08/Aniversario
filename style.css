@@ -128,3 +128,19 @@ button:hover {
 .hidden {
     display: none;
 }
+
+#skipButton {
+    background-color: #601e19; /* Color rojo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#skipButton:hover {
+    background-color: #d32f2f;
+}
